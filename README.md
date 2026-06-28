@@ -6,7 +6,7 @@
 
 Experience analysis on a single tidy table — loss ratios, PMPM, trend, credibility,
 completion/reserving, seasonality, and pooling — with a clean API and no heavy
-dependencies (numpy and pandas only, no scipy).
+dependencies (numpy and pandas only).
 
 **Documentation: https://actuarialpy.github.io/docs/**
 
