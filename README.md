@@ -5,7 +5,7 @@ experience analysis, loss-distribution modeling, Monte Carlo risk simulation, an
 extreme-value tail estimation. Each does one thing with a clean API; together they cover
 a full large-claim and pooling workflow.
 
-**Documentation: openactuarial.org**
+**Documentation: https://openactuarial.org**
 
 ## Install
 
