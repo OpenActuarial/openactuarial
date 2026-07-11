@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openactuarial"
+version = "0.1.0"
+description = "Meta-package installing the full OpenActuarial ecosystem."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Michael Bryant"}]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Financial and Insurance Industry",
+]
+dependencies = [
+    "actuarialpy>=0.44",
+    "experiencestudies>=0.3",
+    "projectionmodels>=0.6.3",
+    "ratingmodels>=0.7.1",
+    "lossmodels>=0.7.2",
+    "extremeloss>=0.6.3",
+    "risksim>=0.5.1",
+]
+
+[project.urls]
+Homepage = "https://openactuarial.org"
+Documentation = "https://openactuarial.org"
+Repository = "https://github.com/OpenActuarial/openactuarial"
+
+[tool.setuptools]
+packages = []
