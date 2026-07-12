@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1
+
+- README refreshed (canonical `Experience` contract, `ExperienceSet`
+  workbook layer, claims-listing fitting in lossmodels/extremeloss).
+- The meta-package is now a real, importable package (`openactuarial`
+  exposes `__version__`) with a smoke test importing all seven pinned
+  packages -- so the release gate verifies the one thing this package
+  promises: the pinned ecosystem resolves and imports.
+
 ## 0.2.0
 
 Floors raised to the canonical-`Experience` releases: `actuarialpy>=0.45`
