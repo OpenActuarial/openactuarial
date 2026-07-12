@@ -26,7 +26,7 @@ individually (`pip install actuarialpy`, and so on).
 
 | Package | Role |
 |---|---|
-| [actuarialpy](https://github.com/OpenActuarial/actuarialpy) | Calculation primitives the workflow packages build on |
+| [actuarialpy](https://github.com/OpenActuarial/actuarialpy) | Calculation primitives, plus the canonical `Experience` data contract the workflow packages consume |
 | [experiencestudies](https://github.com/OpenActuarial/experiencestudies) | Experience reporting, actual-vs-expected, claimant and concentration analysis |
 | [projectionmodels](https://github.com/OpenActuarial/projectionmodels) | Claim, premium, and expense projection over a renewal horizon |
 | [ratingmodels](https://github.com/OpenActuarial/ratingmodels) | Manual and experience rating, credibility, indication, GLM relativities |

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openactuarial"
-version = "0.1.0"
+version = "0.2.0"
 description = "Meta-package installing the full OpenActuarial ecosystem."
 readme = "README.md"
 license = {text = "MIT"}
@@ -16,10 +16,10 @@ classifiers = [
     "Intended Audience :: Financial and Insurance Industry",
 ]
 dependencies = [
-    "actuarialpy>=0.44",
-    "experiencestudies>=0.3",
-    "projectionmodels>=0.6.3",
-    "ratingmodels>=0.7.1",
+    "actuarialpy>=0.45",
+    "experiencestudies>=0.4",
+    "projectionmodels>=0.7",
+    "ratingmodels>=0.8",
     "lossmodels>=0.7.2",
     "extremeloss>=0.6.3",
     "risksim>=0.5.1",
