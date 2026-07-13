@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2
+
+- Update pinned versions.
+
 ## 0.3.1
 
 - Update actuarialpy pinned version.
