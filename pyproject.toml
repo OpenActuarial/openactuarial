@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openactuarial"
-version = "0.2.1"
+version = "0.3.0"
 description = "Meta-package installing the full OpenActuarial ecosystem."
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,16 +13,27 @@ authors = [{name = "Michael Bryant"}]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Intended Audience :: Financial and Insurance Industry",
 ]
+# Exact pins, deliberately: this meta-package installs the one combination
+# of ecosystem releases that was tested together. Pre-1.0 minor releases may
+# break APIs, so open ranges here would let pip assemble an untested (or
+# incompatible) set. Install individual packages directly if you want looser
+# ranges. Each openactuarial release bumps these pins to the next tested train.
 dependencies = [
-    "actuarialpy>=0.45",
-    "experiencestudies>=0.4",
-    "projectionmodels>=0.7",
-    "ratingmodels>=0.8",
-    "lossmodels>=0.7.2",
-    "extremeloss>=0.6.3",
-    "risksim>=0.5.1",
+    "actuarialpy==0.46.1",
+    "experiencestudies==0.5.1",
+    "projectionmodels==0.8.1",
+    "ratingmodels==0.9.1",
+    "lossmodels==0.8.1",
+    "extremeloss==0.7.1",
+    "risksim==0.5.4",
 ]
 
 [project.urls]

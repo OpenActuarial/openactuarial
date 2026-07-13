@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0
+
+The meta-package now pins **exact versions** — the tested release train —
+instead of open lower bounds:
+
+- `actuarialpy==0.46.1`, `experiencestudies==0.5.1`, `projectionmodels==0.8.1`,
+  `ratingmodels==0.9.1`, `lossmodels==0.8.1`, `extremeloss==0.7.1`,
+  `risksim==0.5.4`.
+- Rationale: pre-1.0 minors may break APIs, so open ranges let pip assemble an
+  untested set. A meta-package exists to install a known-good combination;
+  now it actually does.
+- Declare the full supported Python range (3.10–3.14) in the classifiers.
+
 ## 0.2.1
 
 - README refreshed (canonical `Experience` contract, `ExperienceSet`

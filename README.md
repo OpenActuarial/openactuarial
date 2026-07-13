@@ -19,7 +19,12 @@ packages that share conventions and compose across seams.
 pip install openactuarial
 ```
 
-Requires Python 3.10 or newer. Each package can also be installed
+Requires Python 3.10 or newer.
+
+`openactuarial` pins **exact versions** of every package: each release
+installs the one combination that was tested together as a release train.
+If you want looser version ranges, install the individual packages instead —
+they declare compatible ranges (`>=X.Y,<X.Y+1`) rather than exact pins. Each package can also be installed
 individually (`pip install actuarialpy`, and so on).
 
 ## What gets installed
