@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openactuarial"
-version = "0.3.0"
+version = "0.3.1"
 description = "Meta-package installing the full OpenActuarial ecosystem."
 readme = "README.md"
 license = {text = "MIT"}
@@ -27,7 +27,7 @@ classifiers = [
 # incompatible) set. Install individual packages directly if you want looser
 # ranges. Each openactuarial release bumps these pins to the next tested train.
 dependencies = [
-    "actuarialpy==0.46.1",
+    "actuarialpy==0.46.2",
     "experiencestudies==0.5.1",
     "projectionmodels==0.8.1",
     "ratingmodels==0.9.1",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Update actuarialpy pinned version.
+
 ## 0.3.0
 
 The meta-package now pins **exact versions** — the tested release train —
