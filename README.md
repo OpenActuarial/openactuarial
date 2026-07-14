@@ -8,7 +8,7 @@ One install for the full OpenActuarial ecosystem.
 ## Overview
 
 `openactuarial` is a meta-package: it contains no code of its own and exists
-to install the seven OpenActuarial packages in one step. The ecosystem covers
+to install the eight OpenActuarial packages in one step. The ecosystem covers
 general actuarial workflows — experience analysis, projection, rating and
 pricing, reserving, loss modeling, tail estimation, and portfolio simulation — as small
 packages that share conventions and compose across seams.
