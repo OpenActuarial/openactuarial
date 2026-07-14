@@ -1,33 +1,16 @@
-# openactuarial
-
-One install for the full OpenActuarial ecosystem.
+# OpenActuarial
 
 [![PyPI](https://img.shields.io/pypi/v/openactuarial)](https://pypi.org/project/openactuarial/)
 [![Python](https://img.shields.io/pypi/pyversions/openactuarial)](https://pypi.org/project/openactuarial/)
 
-## Overview
+A dependency-light Python ecosystem for general actuarial work — from experience
+analysis and projection through rating, reserving, and loss modeling to tail
+estimation and portfolio capital.
 
-`openactuarial` is a meta-package: it contains no code of its own and exists
-to install the eight OpenActuarial packages in one step. The ecosystem covers
-general actuarial workflows — experience analysis, projection, rating and
-pricing, reserving, loss modeling, tail estimation, and portfolio simulation — as small
-packages that share conventions and compose across seams.
-
-## Installation
-
-```bash
-pip install openactuarial
-```
-
-Requires Python 3.10 or newer.
-
-`openactuarial` pins **exact versions** of every package: each release
-installs the one combination that was tested together as a release train.
-If you want looser version ranges, install the individual packages instead —
-they declare compatible ranges (`>=X.Y,<X.Y+1`) rather than exact pins. Each package can also be installed
-individually (`pip install actuarialpy`, and so on).
-
-## What gets installed
+Small, composable packages that take and return plain pandas and numpy, share one
+set of conventions — tidy tables, explicit distribution parameterizations,
+reproducible randomness — and build on a common primitives layer, `actuarialpy`,
+rather than a framework you have to buy into.
 
 | Package | Role |
 |---|---|
@@ -40,21 +23,27 @@ individually (`pip install actuarialpy`, and so on).
 | [extremeloss](https://github.com/OpenActuarial/extremeloss) | Extreme-value tails: POT/GPD, GEV, return levels, splicing; fits directly from a claims-listing `Experience` |
 | [risksim](https://github.com/OpenActuarial/risksim) | Portfolio Monte Carlo, dependence, reinsurance contracts, risk measures |
 
-## Version policy
+## Install
 
-Dependencies are pinned to **exact versions**: the single combination of
-releases tested together as a train. Pre-1.0 minor releases may change APIs, so
-open ranges would let pip assemble a set that was never tested against itself —
-a meta-package exists to install a known-good combination, so it pins one, and
-each `openactuarial` release bumps these pins to the next tested train.
-Separately, the nightly ecosystem smoke workflow reruns every package's test
-suite against the current PyPI releases, so cross-package breakage surfaces as
-it lands.
+```bash
+pip install openactuarial     # all eight packages, one tested set
+pip install actuarialpy       # - or any package on its own
+```
 
-## Documentation
+`openactuarial` is a meta-package with no code of its own: it pins the **exact
+versions** of all eight packages that were tested together as a release train, so
+a single command installs a known-good combination, and each release bumps those
+pins to the next tested train. Prefer looser ranges? Install the packages
+individually — each declares its own compatible range (`>=X.Y,<X.Y+1`). Requires
+Python 3.10+.
 
-Full API references and nine end-to-end worked examples:
-**[openactuarial.org](https://openactuarial.org)**.
+## Docs & examples
+
+Full API reference and worked examples that run end to end:
+**[openactuarial.org](https://openactuarial.org)**. Every package's test suite
+reruns nightly against the current PyPI releases (the [ecosystem
+smoke](https://github.com/OpenActuarial/docs/actions/workflows/ecosystem-smoke.yml)),
+so cross-package drift surfaces within a day.
 
 ## License
 
