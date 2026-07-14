@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openactuarial"
-version = "0.3.2"
+version = "0.4.0"
 description = "Meta-package installing the full OpenActuarial ecosystem."
 readme = "README.md"
 license = {text = "MIT"}
@@ -31,6 +31,7 @@ dependencies = [
     "experiencestudies==0.5.2",
     "projectionmodels==0.8.2",
     "ratingmodels==0.9.2",
+    "reservingmodels==0.1.0",
     "lossmodels==0.8.2",
     "extremeloss==0.7.2",
     "risksim==0.5.5",

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0
+
+Add `reservingmodels` to the ecosystem train.
+
+- Pin `reservingmodels==0.1.0`: claims development and stochastic reserving
+  — chain ladder, Bornhuetter-Ferguson, Mack, and the over-dispersed-Poisson
+  bootstrap of the predictive reserve distribution. The eighth package in the
+  ecosystem.
+- Remaining pins unchanged from 0.3.2 (the currently tested train).
+
 ## 0.3.2
 
 - Update pinned versions.

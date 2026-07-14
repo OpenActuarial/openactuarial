@@ -4,7 +4,7 @@ import importlib
 import openactuarial
 
 PACKAGES = ("actuarialpy", "experiencestudies", "projectionmodels",
-            "ratingmodels", "lossmodels", "extremeloss", "risksim")
+            "ratingmodels", "reservingmodels", "lossmodels", "extremeloss", "risksim")
 
 
 def test_every_pinned_package_imports():
